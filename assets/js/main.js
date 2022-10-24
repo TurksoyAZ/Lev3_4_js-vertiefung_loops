@@ -5,12 +5,11 @@ const output = document.getElementById("output");
 
 function button() {
   if (inputFeld.value) {
+    let text = 0;
     for (let a = 0; a <= inputFeld.value; a++) {
-      let text = 0;
       if (a % selectFirst.value == 0 || a % selectLast.value == 0) {
         text = text + a;
         output.innerHTML = `${text}`;
-       
       }
     }
   }
